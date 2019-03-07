@@ -34,5 +34,6 @@ int Count_one_bits(unsigned int value)
 			++count;
 		}
 	}
+	
 	return count;
 }
