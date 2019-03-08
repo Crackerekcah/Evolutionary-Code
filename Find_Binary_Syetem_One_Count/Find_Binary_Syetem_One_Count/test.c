@@ -2,11 +2,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int Count_one_bits(unsigned int value);
+int Count_one_bits(int value);
 
 int main()
 {
-	unsigned int num;
+	int num;
 	printf("请输入要转换为二进制的数字：\n");
 	scanf("%d", &num);
 	int count = Count_one_bits(num);
@@ -15,12 +15,12 @@ int main()
 	return 0;
 }
 
-int Count_one_bits(unsigned int value)
+int Count_one_bits(int value)
 {
 	int count = 0;
-	while (value != 0)
+	for (int i = 0; i < 32; ++i)
 	{
-		if (value % 2 == 1)
+		if ((value & 1) == 1)
 		{
 			++count;
 		}
