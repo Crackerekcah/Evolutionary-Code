@@ -12,6 +12,7 @@ int main()
 	int count = Count_one_bits(num);
 	printf("%d转换为二进制后有%d个 1 \n", num, count);
 	system("pause");
+
 	return 0;
 }
 
